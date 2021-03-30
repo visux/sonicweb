@@ -1,0 +1,7 @@
+{
+  "name": "SonicWeb",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
