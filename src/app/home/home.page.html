@@ -9,12 +9,24 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScrollStart)="logScrollStart($event)" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd($event)">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">SONIC TOKEN</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-button (click)="scrollToLabel(item.id)" *ngFor="let item of dummyList">
+    {{item.title}}
+  </ion-button>
+
+  <div *ngFor="let item of dummyList">
+    <h4 id='{{item.id}}'>{{item.title}}</h4>
+    <p>{{item.text}}</p>
+  </div>
+  
+
+  <ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button>
+  <ion-button (click)="ScrollToTop()"> Scroll To Top </ion-button>
 
   <div id="container">
     <strong>Ready to use Sonic?</strong>

@@ -20,19 +20,24 @@ export class AppComponent {
       icon: 'albums'
     },
     {
+      title: 'GET APP',
+      url: '',
+      icon: 'play'
+    },
+    {
       title: 'About',
       url: '/login',
-      icon: 'person'
+      icon: 'information'
     },
     {
       title: 'Roadmap',
       url: '/register',
-      icon: 'person'
+      icon: 'map'
     },
     {
       title: 'Contacts',
-      url: '/register',
-      icon: 'person'
+      url: '',
+      icon: 'people'
     }
   ];
   
