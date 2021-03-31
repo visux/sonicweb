@@ -15,17 +15,22 @@ export class AppComponent {
 
   Pages = [
     {
-      title: 'Dashboard',
+      title: 'SONIC 777',
       url: '',
       icon: 'albums'
     },
     {
-      title: 'Login',
+      title: 'About',
       url: '/login',
       icon: 'person'
     },
     {
-      title: 'Register',
+      title: 'Roadmap',
+      url: '/register',
+      icon: 'person'
+    },
+    {
+      title: 'Contacts',
       url: '/register',
       icon: 'person'
     }
