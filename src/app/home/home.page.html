@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      SONIC TOKEN
-     </ion-title>
+    <ion-title size="large">SONIC TOKEN</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
@@ -10,27 +8,27 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" [scrollEvents]="true" (ionScrollStart)="logScrollStart($event)" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd($event)">
-  <ion-img src="./../../assets/sonic.png"></ion-img>
-  <div id="container">
-    <strong>Ready to use Sonic?</strong>
-    <p>Start with Sonic <a target="_blank" rel="noopener noreferrer" href="http://164.68.126.35:3000/">BUY SON TOKENS</a></p>
-  </div>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">SONIC TOKEN</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="vertical-center">
+    <div class="center animazione">
+      <ion-img src="./../../assets/sonic.png" class="ion-align-self-end"></ion-img>
+    </div>  
+    </div>
+   
+    <div id="containersu">
+     
+      <strong>Ready to use Sonic?</strong>
+       <p>Start with Sonic <a target="_blank" rel="noopener noreferrer" href="http://164.68.126.35:3000/">BUY SON TOKENS</a></p>
   
+    </div>
   <ion-button (click)="scrollToLabel(item.id)" *ngFor="let item of dummyList">
     {{item.title}}
   </ion-button>
-
   <div *ngFor="let item of dummyList">
     <h4 id='{{item.id}}'>{{item.title}}</h4>
     <p>{{item.text}}</p>
   </div>
   
-
+  
   <ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button>
   <ion-button (click)="ScrollToTop()"> Scroll To Top </ion-button>
 

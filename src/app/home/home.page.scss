@@ -29,3 +29,38 @@
 .my-custom-menu {
   --width: 500px;
 }
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#containersu {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+#containersu strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#containersu p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#containersu a {
+  text-decoration: none;
+}

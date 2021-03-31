@@ -1,5 +1,5 @@
 import { Component ,ViewChild} from '@angular/core';
-import { IonContent, MenuController } from '@ionic/angular';
+import { createAnimation, IonContent, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +11,10 @@ export class HomePage {
   @ViewChild(IonContent, { static: false }) content: IonContent;
   dummyList: any;
 
+  
   constructor(private menu: MenuController) { 
       
+   
     this.dummyList = [
       {
         id: 'ref',
@@ -81,5 +83,7 @@ export class HomePage {
     var titleELe = document.getElementById(label);
     this.content.scrollToPoint(0, titleELe.offsetTop, 1000);
   }
+
+  
 
 }
