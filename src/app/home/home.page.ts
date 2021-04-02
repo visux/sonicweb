@@ -25,7 +25,7 @@ export class HomePage {
       {
         id: 'ref',
         title: 'SONIC 677',
-        img : '',
+        img : './../../assets/diagrasonic.png',
         button1 : 'SHOW ECONOMIC TREND OF SONIC',
         link1 : '',
         button2 : 'COINGECKO',
@@ -82,7 +82,7 @@ export class HomePage {
               {
                 id: 'ref',
                 title: 'ROADMAP',
-                img : '',
+                img : './../../assets/roadmap.png',
               }];
 
               this.contattiList = [

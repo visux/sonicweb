@@ -27,23 +27,26 @@
   <ion-card *ngFor="let item of firstList">
     <ion-card-header>
       <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-      <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>
+     
     </ion-card-header>
-  
     <ion-card-content>
+    <div class="vertical-center">
+      <div class="center animazione">
+        <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
+      </div>  
+      </div>
+    
       {{item.text}}
+      <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>
+       
+        <ion-button fill="outline" >{{item.button2}}</ion-button>
+        <ion-button fill="outline" >{{item.button3}}</ion-button>
+        <ion-button fill="outline">{{item.button4}}</ion-button>
+        <ion-button fill="outline" >{{item.button5}}</ion-button>
+        <ion-button fill="outline" >{{item.button6}}</ion-button>
+     
     </ion-card-content>
-    <ion-item >
-      <ion-icon name="pin" slot="start"></ion-icon>
-      
-      <ion-button fill="outline" slot="start">{{item.button2}}</ion-button>
-      <ion-button fill="outline" slot="start">{{item.button3}}</ion-button>
-      <ion-button fill="outline" slot="start">{{item.button4}}</ion-button>
-    </ion-item>
-    <ion-item >
-      <ion-button fill="outline" slot="start">{{item.button5}}</ion-button>
-      <ion-button fill="outline" slot="start">{{item.button6}}</ion-button>
-    </ion-item>
+   
   </ion-card>
 
   <ion-card *ngFor="let item of secondList">
@@ -88,9 +91,16 @@
    <ion-card *ngFor="let item of cinqueList">
     <ion-card-header>
       <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-     
-    </ion-card-header>
-  
+     </ion-card-header>
+    
+    <ion-card-content>
+      <div class="vertical-center">
+        <div class="center animazione">
+          <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
+        </div>  
+        </div>
+    </ion-card-content>
+    
    </ion-card>
 
    <ion-card *ngFor="let item of contattiList">
@@ -101,25 +111,6 @@
   
    </ion-card>
    
-  <!--<ion-card *ngFor="let item of dummyList">
-    <ion-card-header>
-      <ion-card-title center><h4 id='{{item.id}}'>{{item.title}}</h4></ion-card-title>
-      <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      {{item.text}}
-    </ion-card-content>
-    <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>Price actions</ion-label>
-      <ion-button fill="outline" slot="start">{{item.button2}}</ion-button>
-      <ion-button fill="outline" slot="start">{{item.button3}}</ion-button>
-      <ion-button fill="outline" slot="start">{{item.button4}}</ion-button>
-      <ion-button fill="outline" slot="start">{{item.button5}}</ion-button>
-      <ion-button fill="outline" slot="start">{{item.button6}}</ion-button>
-    </ion-item>
-  </ion-card> -->
   
 
   
