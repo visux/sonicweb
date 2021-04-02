@@ -9,18 +9,24 @@ import { createAnimation, IonContent, MenuController } from '@ionic/angular';
 export class HomePage {
 
   @ViewChild(IonContent, { static: false }) content: IonContent;
+  firstList: any;
+  secondList: any;
+  terzaList: any;
+  quattroList: any;
+  contattiList:any;
+  cinqueList:any;
   dummyList: any;
 
   
   constructor(private menu: MenuController) { 
       
    
-    this.dummyList = [
+    this.firstList = [
       {
         id: 'ref',
-        title: 'SONIC 777',
+        title: 'SONIC 677',
         img : '',
-        button1 : 'Erc777',
+        button1 : 'SHOW ECONOMIC TREND OF SONIC',
         link1 : '',
         button2 : 'COINGECKO',
         link2 : '',
@@ -32,79 +38,63 @@ export class HomePage {
         link5 : '',
         button6 : 'PANCAKE',
         link6 : '',
-        text: 'Inventore quae numquam id rerum. Tempora quaerat et veniam. Similique quia amet. Delectus doloremque delectus et doloribus saepe est magnam voluptatem. Consequatur sed ea excepturi eveniet corrupti laboriosam. Laudantium mollitia placeat nemo quod tenetur qui natus. Facilis sit blanditiis harum explicabo eos at ea expedita. Dolor eius animi quod sint et qui non et rem. Consequatur dolor consequatur quos corrupti dolores quis illo molestiae libero. Nihil aut hic nemo dignissimos. Asperiores quo beatae error ut qui nihil. Voluptatibus perspiciatis fuga voluptas distinctio harum et et dolores. Fugiat dolor molestiae necessitatibus dolorum.'
+        text: 'SONIC (SON) is a smart contract that implements a new ERC677 standard token for Ethereum network and even later a BEP-20 for BSC network.'
       
-      }, {
-        id: 'sma',
-        title: 'GET APP',
-        img : '',
-        button1 : 'Erc777',
-        link1 : '',
-        button2 : '',
-        link2 : '',
-        button3 : '',
-        link3 : '',
-        button4 : '',
-        link4 : '',
-        button5 : '',
-        link5 : '',
-        button6 : '',
-        link6 : '',
-        text: 'Inventore quae numquam id rerum. Tempora quaerat et veniam. Similique quia amet. Delectus doloremque delectus et doloribus saepe est magnam voluptatem. Consequatur sed ea excepturi eveniet corrupti laboriosam. Laudantium mollitia placeat nemo quod tenetur qui natus. Facilis sit blanditiis harum explicabo eos at ea expedita. Dolor eius animi quod sint et qui non et rem. Consequatur dolor consequatur quos corrupti dolores quis illo molestiae libero. Nihil aut hic nemo dignissimos. Asperiores quo beatae error ut qui nihil. Voluptatibus perspiciatis fuga voluptas distinctio harum et et dolores. Fugiat dolor molestiae necessitatibus dolorum.'
-      }, {
-        id: 'ibh',
-        title: 'About',
-        img : '',
-        button1 : '',
-        link1 : '',
-        button2 : '',
-        link2 : '',
-        button3 : '',
-        link3 : '',
-        button4 : '',
-        link4 : '',
-        button5 : '',
-        link5 : '',
-        button6 : '',
-        link6 : '',
-        text: 'Inventore quae numquam id rerum. Tempora quaerat et veniam. Similique quia amet. Delectus doloremque delectus et doloribus saepe est magnam voluptatem. Consequatur sed ea excepturi eveniet corrupti laboriosam. Laudantium mollitia placeat nemo quod tenetur qui natus. Facilis sit blanditiis harum explicabo eos at ea expedita. Dolor eius animi quod sint et qui non et rem. Consequatur dolor consequatur quos corrupti dolores quis illo molestiae libero. Nihil aut hic nemo dignissimos. Asperiores quo beatae error ut qui nihil. Voluptatibus perspiciatis fuga voluptas distinctio harum et et dolores. Fugiat dolor molestiae necessitatibus dolorum.'
-      }, {
-        id: 'tab',
-        title: 'Roadmap',
-        img : '',
-        button1 : '',
-        link1 : '',
-        button2 : '',
-        link2 : '',
-        button3 : '',
-        link3 : '',
-        button4 : '',
-        link4 : '',
-        button5 : '',
-        link5 : '',
-        button6 : '',
-        link6 : '',
-        text: 'Inventore quae numquam id rerum. Tempora quaerat et veniam. Similique quia amet. Delectus doloremque delectus et doloribus saepe est magnam voluptatem. Consequatur sed ea excepturi eveniet corrupti laboriosam. Laudantium mollitia placeat nemo quod tenetur qui natus. Facilis sit blanditiis harum explicabo eos at ea expedita. Dolor eius animi quod sint et qui non et rem. Consequatur dolor consequatur quos corrupti dolores quis illo molestiae libero. Nihil aut hic nemo dignissimos. Asperiores quo beatae error ut qui nihil. Voluptatibus perspiciatis fuga voluptas distinctio harum et et dolores. Fugiat dolor molestiae necessitatibus dolorum.'
-      }, {
-        id: 'tab',
-        title: 'Contacts',
-        img : '',
-        button1 : '',
-        link1 : '',
-        button2 : '',
-        link2 : '',
-        button3 : '',
-        link3 : '',
-        button4 : '',
-        link4 : '',
-        button5 : '',
-        link5 : '',
-        button6 : '',
-        link6 : '',
-        text: 'Inventore quae numquam id rerum. Tempora quaerat et veniam. Similique quia amet. Delectus doloremque delectus et doloribus saepe est magnam voluptatem. Consequatur sed ea excepturi eveniet corrupti laboriosam. Laudantium mollitia placeat nemo quod tenetur qui natus. Facilis sit blanditiis harum explicabo eos at ea expedita. Dolor eius animi quod sint et qui non et rem. Consequatur dolor consequatur quos corrupti dolores quis illo molestiae libero. Nihil aut hic nemo dignissimos. Asperiores quo beatae error ut qui nihil. Voluptatibus perspiciatis fuga voluptas distinctio harum et et dolores. Fugiat dolor molestiae necessitatibus dolorum.'
-      }
-    ];
+      }];
 
+      this.secondList = [
+        {
+          id: 'ref',
+          title: ' NFT COLLECTIBLES TOKENS ',
+          img1 : '',
+          img2 : '',
+          button1 : '',
+          link1 : '',
+          text1 : 'AKAJHAKLHALKHALAHLAJHLDHGLJDGOIEUOIEUEIOUEIOEUIOEUIOEUIEOUEOIUEOIEUOIENNKJ',
+          text2 : 'AKAJHAKLHALKHALAHLAJHLDHGLJDGOIjlskjdsaldlEUOIEUEIOUEIOEUIOEUIOEUIEOUEOIUEOIEUOIENNKJ',
+          text3 : 'oeiuewrnw,emrnew,LDKJDKJHDKJDHsd,msa.d,msad.samdm',
+          text4 : 'ksdkjahsdKJLDKJDLKDJLKJDLJLDKDJLKJDLDJLKJD',
+          text5 : 'KJHFDKHDKJRJFLFNLDKçDLKDçLDKçDKçDKçDKDçDKL',
+          text6 : 'sjdlsakdjlasdjdlksajdlaksdjlLKJDLKJDLKSJKLAJDLAJSKLJSDAKLJADSJSALKDJLKASD',
+        }];
+
+        this.terzaList = [
+          {
+            id: 'ref',
+            title: 'GET APP',
+            img1 : '',
+            img2 : '',
+            link1 : '',
+            link2 : '',
+            text : 'Download the App and used it to collect your NFT cards',
+          }];
+
+          this.quattroList = [
+            {
+              id: 'ref',
+              title: 'ABOUTS',
+              subtitle : '',
+              img : '',
+              text : '',
+            }];
+  
+            this.cinqueList = [
+              {
+                id: 'ref',
+                title: 'ROADMAP',
+                img : '',
+              }];
+
+              this.contattiList = [
+                {
+                  id: 'ref',
+                  title: 'CONTACTS',
+                  img : '',
+                }];
+    
+        
+
+   
   }
 
   openFirst() {
