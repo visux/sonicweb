@@ -70,8 +70,8 @@ export class HomePage {
 
           this.quattroList = [
             {
-              id: 'abouts',
-              title: 'ABOUTS',
+              id: 'about',
+              title: 'ABOUT',
               subtitle : 'SONIC is a collectible NFT card picture games on SONIC SOCIAL with a decentralized ecosystem.',
               img : '',
               text : '',
