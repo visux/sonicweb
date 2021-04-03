@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import { IonContent, Platform } from '@ionic/angular';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 
@@ -15,31 +15,33 @@ export class AppComponent {
 
   Pages = [
     {
-      title: 'SONIC 777',
-      url: '',
+      title: 'SONIC 677',
+      url: 'sonic',
       icon: 'albums'
     },
     {
       title: 'GET APP',
-      url: '',
+      url: 'getapp',
       icon: 'play'
     },
     {
       title: 'About',
-      url: '/login',
+      url: 'about',
       icon: 'information'
     },
     {
       title: 'Roadmap',
-      url: '/register',
+      url: 'roadmap',
       icon: 'map'
     },
     {
       title: 'Contacts',
-      url: '',
+      url: 'contacts',
       icon: 'people'
     }
   ];
+
+  @ViewChild(IonContent, { static: false }) content: IonContent;
   
   constructor( private platform: Platform,
     private statusBar: StatusBar,
@@ -52,5 +54,10 @@ export class AppComponent {
         this.statusBar.styleDefault();
         this.splashScreen.hide();
       });
+    }
+
+    scrollToLabel(label) {
+      var titleELe = document.getElementById(label);
+      this.content.scrollToPoint(0, titleELe.offsetTop, 1000);
     }
 }

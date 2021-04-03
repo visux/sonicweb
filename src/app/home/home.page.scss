@@ -69,3 +69,20 @@
   color: white;
   text-align: center;
 }
+.sonicmini{
+  height: 30px;
+  padding-right: 10px;
+  display:inline-block;
+}
+.titleicon div{
+  display:inline-block;
+  margin-bottom:10px;
+  }
+
+  .horizontal-cards {
+    ion-card {
+        display: inline-block;
+        width: 200px;
+        padding: 10px;
+    }
+}

@@ -16,14 +16,13 @@ export class HomePage {
   contattiList:any;
   cinqueList:any;
   dummyList: any;
-
+  
   
   constructor(private menu: MenuController) { 
       
-   
-    this.firstList = [
+        this.firstList = [
       {
-        id: 'ref',
+        id: 'sonic',
         title: 'SONIC 677',
         img : './../../assets/diagrasonic.png',
         button1 : 'SHOW ECONOMIC TREND OF SONIC',
@@ -38,32 +37,32 @@ export class HomePage {
         link5 : '',
         button6 : 'PANCAKE',
         link6 : '',
-        text: 'SONIC (SON) is a smart contract that implements a new ERC677 standard token for Ethereum network and even later a BEP-20 for BSC network.'
+        text: 'SONIC (SON) is a smart contract that implement a new ERC677 standard token for Ethereum network and even later a BEP-20 for BSC network.'
       
       }];
 
       this.secondList = [
         {
-          id: 'ref',
-          title: ' NFT COLLECTIBLES TOKENS ',
+          id: 'social',
+          title: ' SOCIAL WITH NFT COLLECTIBLES TOKENS ',
           img1 : '',
           img2 : '',
           button1 : '',
           link1 : '',
-          text1 : 'AKAJHAKLHALKHALAHLAJHLDHGLJDGOIEUOIEUEIOUEIOEUIOEUIOEUIEOUEOIUEOIEUOIENNKJ',
-          text2 : 'AKAJHAKLHALKHALAHLAJHLDHGLJDGOIjlskjdsaldlEUOIEUEIOUEIOEUIOEUIOEUIEOUEOIUEOIEUOIENNKJ',
-          text3 : 'oeiuewrnw,emrnew,LDKJDKJHDKJDHsd,msa.d,msad.samdm',
-          text4 : 'ksdkjahsdKJLDKJDLKDJLKJDLJLDKDJLKJDLDJLKJD',
-          text5 : 'KJHFDKHDKJRJFLFNLDKçDLKDçLDKçDKçDKçDKDçDKL',
-          text6 : 'sjdlsakdjlasdjdlksajdlaksdjlLKJDLKJDLKSJKLAJDLAJSKLJSDAKLJADSJSALKDJLKASD',
+          text1 : 'A non-fungible token is a unit of data on a digital ledger called a blockchain.',
+          text2 : 'Each NFT on Sonic Social can represent a unique digital card picture game collectible.',
+          text3 : 'Transfer your cards directly with NFC technology',
+          text4 : 'Sharing and comments for NFT cards',
+          text5 : 'Buy rare NFT tokens and collect your favorite games',
+          text6 : 'You can buy directly with the SON token',
         }];
 
         this.terzaList = [
           {
-            id: 'ref',
+            id: 'getapp',
             title: 'GET APP',
-            img1 : '',
-            img2 : '',
+            img1 : './../../assets/google-play-badge.png',
+            img2 : './../../assets/appstore-badge.png',
             link1 : '',
             link2 : '',
             text : 'Download the App and used it to collect your NFT cards',
@@ -71,23 +70,23 @@ export class HomePage {
 
           this.quattroList = [
             {
-              id: 'ref',
+              id: 'abouts',
               title: 'ABOUTS',
-              subtitle : '',
+              subtitle : 'SONIC is a collectible NFT card picture games on SONIC SOCIAL with a decentralized ecosystem.',
               img : '',
               text : '',
             }];
   
             this.cinqueList = [
               {
-                id: 'ref',
+                id: 'roadmap',
                 title: 'ROADMAP',
                 img : './../../assets/roadmap.png',
               }];
 
               this.contattiList = [
                 {
-                  id: 'ref',
+                  id: 'contacts',
                   title: 'CONTACTS',
                   img : '',
                 }];
