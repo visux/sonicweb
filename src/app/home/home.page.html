@@ -1,9 +1,10 @@
 <ion-header [translucent]="true" >
   <ion-toolbar >
     
-    <ion-title  slot="start" ><img src="./../../assets/minisonic.png" class="sonicmini"  />SONIC TOKEN</ion-title>
+    <ion-title  slot="start" >SONIC TOKEN</ion-title>
     
     <ion-buttons slot="end">
+      <img src="./../../assets/minisonic.png" class="sonicmini"  />
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
@@ -100,7 +101,7 @@
     <ion-card-content class="ion-text-center">
       <div class="vertical-center">
       <ion-card>
-        <ion-item href="#" >
+        <ion-item href="#" class="ion-padding">
           <ion-icon name="wallet" slot="start"></ion-icon>
           {{item.text1}}
         </ion-item>
