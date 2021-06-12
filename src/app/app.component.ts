@@ -15,7 +15,7 @@ export class AppComponent {
 
   Pages = [
     {
-      title: 'SONIC 677',
+      title: 'SONIC(K) 777',
       url: 'sonic',
       icon: 'albums'
     },

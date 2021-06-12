@@ -23,7 +23,7 @@ export class HomePage {
         this.firstList = [
       {
         id: 'sonic',
-        title: 'SONIC 677',
+        title: 'SONIC(K) 777',
         img : './../../assets/diagrasonic.png',
         button1 : 'SHOW ECONOMIC TREND OF SONIC',
         link1 : '',
@@ -37,7 +37,7 @@ export class HomePage {
         link5 : '',
         button6 : 'PANCAKE',
         link6 : '',
-        text: 'SONIC (SON) is a smart contract that implement a new ERC677 standard token for Ethereum network and even later a BEP-20 for BSC network.'
+        text: 'SONIC (SON) is a smart contract that implement a new ERC777 standard token for Ethereum network and even later a BEP-20 for BSC network.'
       
       }];
 
@@ -72,7 +72,7 @@ export class HomePage {
             {
               id: 'about',
               title: 'ABOUT',
-              subtitle : 'SONIC is a collectible NFT card picture games on SONIC SOCIAL with a decentralized ecosystem.',
+              subtitle : 'SONIC(K) is a collectible NFT card picture games on SONIC SOCIAL with a decentralized ecosystem.',
               img : '',
               text : '',
             }];

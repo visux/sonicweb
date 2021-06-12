@@ -1,7 +1,7 @@
 <ion-header [translucent]="true" >
   <ion-toolbar >
     
-    <ion-title  slot="start" >SONIC TOKEN</ion-title>
+    <ion-title  slot="start" >SONIC(K) TOKEN</ion-title>
     
     <ion-buttons slot="end">
       <img src="./../../assets/minisonic.png" class="sonicmini"  />
@@ -11,190 +11,191 @@
 </ion-header>
 
 <ion-content center text-center [fullscreen]="true" [scrollEvents]="true" (ionScrollStart)="logScrollStart($event)" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd($event)">
-    <div class="vertical-center">
-    <div class="center animazione"> 
-      <ion-img src="./../../assets/sonic.png" class="ion-align-self-end sonicimage"></ion-img>
-    </div>  
-    </div>
-   
-    <div id="containersu">
-     
-      <strong>Ready to use Sonic?</strong>
-       <p>Start with Sonic<a target="_blank" rel="noopener noreferrer" href="http://164.68.126.35:3000/">BUY SON TOKEN</a></p>
-  
-    </div>
-  <!--<ion-button (click)="scrollToLabel(item.id)" *ngFor="let item of dummyList">
-    {{item.title}}
-  </ion-button>-->
-  
-  <ion-card *ngFor="let item of firstList">
-    <ion-card-header>
-      <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-     
-    </ion-card-header>
-    <ion-card-content>
-    <div class="vertical-center">
-      <div class="center animazione">
-        <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
-      </div>  
-      </div>
-    
-      <ion-card-content class="ion-text-center">
+  <div class="bg-gradient-class">
+      <div class="vertical-center">
+        <div class="center animazione"> 
+          <ion-img src="./../../assets/sonic.png" class="ion-align-self-end sonicimage"></ion-img>
+        </div>  
+        </div>
+      
+        <div id="containersu">
+        
+          <strong>Ready to use Sonic(k)?</strong>
+          <p>Start with Sonic<a target="_blank" rel="noopener noreferrer" href="http://164.68.126.35:3000/">BUY SON TOKEN</a></p>
+      
+        </div>
+      <!--<ion-button (click)="scrollToLabel(item.id)" *ngFor="let item of dummyList">
+        {{item.title}}
+      </ion-button>-->
+      
+      <ion-card *ngFor="let item of firstList">
+        <ion-card-header>
+          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+        
+        </ion-card-header>
+        <ion-card-content>
         <div class="vertical-center">
-        <ion-card>
-          <ion-item href="#" >
+          <div class="center animazione">
+            <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
+          </div>  
+          </div>
+        
+          <ion-card-content class="ion-text-center">
+            <div class="vertical-center">
+            <ion-card>
+              <ion-item href="#" >
+              
+                {{item.text}}
+              </ion-item>
+            </ion-card>
+          </div>
+          </ion-card-content>
           
-            {{item.text}}
-          </ion-item>
-        </ion-card>
-      </div>
-      </ion-card-content>
-      
-    
-      
-      <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>
-       
-        <ion-button fill="outline" >{{item.button2}}</ion-button>
-        <ion-button fill="outline" >{{item.button3}}</ion-button>
-        <ion-button fill="outline">{{item.button4}}</ion-button>
-        <ion-button fill="outline" >{{item.button5}}</ion-button>
-        <ion-button fill="outline" >{{item.button6}}</ion-button>
-     
-    </ion-card-content>
-   
-  </ion-card>
-
-  <ion-card *ngFor="let item of secondList">
-    <ion-card-header>
-      <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-      <div class="ion-padding">
-        <div class="horizontal-cards">
-          <ion-card color="primary">
-            <ion-card-header>
-              <ion-card-title>Pacman</ion-card-title>
-              <ion-card-subtitle>Pacman card</ion-card-subtitle>
-            </ion-card-header>
+        
           
-            <ion-card-content>
-            </ion-card-content>
-    
-            <img src="assets/pacman.png">
-          </ion-card>
-    
-          <ion-card color="primary">
-            <ion-card-header>
-              <ion-card-title>Tetris</ion-card-title>
-              <ion-card-subtitle>Tetris card</ion-card-subtitle>
-            </ion-card-header>
+          <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>
           
-            <ion-card-content>
-            </ion-card-content>
-    
-            <img src="assets/tetris.gif">
-          </ion-card>
-    
-        </div>
-      </div>
-     <!-- <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>-->
-    </ion-card-header>
-  
-    <ion-card-content class="ion-text-center">
-      <div class="vertical-center">
-      <ion-card>
-        <ion-item href="#" class="ion-padding">
-          <ion-icon name="wallet" slot="start"></ion-icon>
-          {{item.text1}}
-        </ion-item>
+            <ion-button fill="outline" >{{item.button2}}</ion-button>
+            <ion-button fill="outline" >{{item.button3}}</ion-button>
+            <ion-button fill="outline">{{item.button4}}</ion-button>
+            <ion-button fill="outline" >{{item.button5}}</ion-button>
+            <ion-button fill="outline" >{{item.button6}}</ion-button>
+        
+        </ion-card-content>
       
-        <ion-item href="#">
-          <ion-icon name="people" slot="start"></ion-icon>
-          {{item.text2}}
-        </ion-item>
-      
-        <ion-item href="#">
-          <ion-icon name="wifi" slot="start"></ion-icon>
-          {{item.text3}}
-        </ion-item>
-      
-        <ion-item href="#">
-          <ion-icon name="share" slot="start"></ion-icon>
-          {{item.text4}}
-        </ion-item>
-        <ion-item href="#">
-          <ion-icon name="cash" slot="start"></ion-icon>
-         {{item.text5}}
-        </ion-item>
-        <ion-item href="#">
-          <ion-icon name="cart" slot="start"></ion-icon>
-          {{item.text6}}
-        </ion-item>
       </ion-card>
-    </div>
-    </ion-card-content>
-    
-  </ion-card>
 
-  <ion-card *ngFor="let item of terzaList">
-    <ion-card-header>
-      <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-      <ion-card-title center><h4 id='{{item.id}}'>{{item.text}}</h4></ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-     
-      <div class="vertical-center">
-        <div class="center animazione"> 
-          <ion-img src="{{item.img1}}" class="ion-align-self-end"></ion-img>
-        </div>  
-        <div class="center animazione"> 
-          <ion-img src="{{item.img2}}" class="ion-align-self-end"></ion-img>
-        </div> 
-        </div>
-    </ion-card-content>
-   </ion-card>
-
-   <ion-card *ngFor="let item of quattroList">
-    <ion-card-header>
-      <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-      <ion-card-title center><h4 id='{{item.id}}'>{{item.subtitle}}</h4></ion-card-title>
+      <ion-card *ngFor="let item of secondList">
+        <ion-card-header>
+          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+          <div class="ion-padding">
+            <div class="horizontal-cards">
+              <ion-card color="primary">
+                <ion-card-header>
+                  <ion-card-title>Pacman</ion-card-title>
+                  <ion-card-subtitle>Pacman card</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                </ion-card-content>
+        
+                <img src="assets/pacman.png">
+              </ion-card>
+        
+              <ion-card color="primary">
+                <ion-card-header>
+                  <ion-card-title>Tetris</ion-card-title>
+                  <ion-card-subtitle>Tetris card</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                </ion-card-content>
+        
+                <img src="assets/tetris.gif">
+              </ion-card>
+        
+            </div>
+          </div>
+        <!-- <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>-->
+        </ion-card-header>
       
-    </ion-card-header>
-  
-    <ion-card-content>
-      {{item.text}}
-    </ion-card-content>
-   </ion-card>
-
-   <ion-card *ngFor="let item of cinqueList">
-    <ion-card-header>
-      <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-     </ion-card-header>
-    
-    <ion-card-content>
-      <div class="vertical-center">
-        <div class="center animazione">
-          <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
-        </div>  
+        <ion-card-content class="ion-text-center">
+          <div class="vertical-center">
+          <ion-card>
+            <ion-item href="#" class="ion-padding">
+              <ion-icon name="wallet" slot="start"></ion-icon>
+              {{item.text1}}
+            </ion-item>
+          
+            <ion-item href="#">
+              <ion-icon name="people" slot="start"></ion-icon>
+              {{item.text2}}
+            </ion-item>
+          
+            <ion-item href="#">
+              <ion-icon name="wifi" slot="start"></ion-icon>
+              {{item.text3}}
+            </ion-item>
+          
+            <ion-item href="#">
+              <ion-icon name="share" slot="start"></ion-icon>
+              {{item.text4}}
+            </ion-item>
+            <ion-item href="#">
+              <ion-icon name="cash" slot="start"></ion-icon>
+            {{item.text5}}
+            </ion-item>
+            <ion-item href="#">
+              <ion-icon name="cart" slot="start"></ion-icon>
+              {{item.text6}}
+            </ion-item>
+          </ion-card>
         </div>
-    </ion-card-content>
-    
-   </ion-card>
+        </ion-card-content>
+        
+      </ion-card>
 
-   <ion-card *ngFor="let item of contattiList">
-    <ion-card-header>
-      <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-     
-    </ion-card-header>
-  
-   </ion-card>
-   
-  
+      <ion-card *ngFor="let item of terzaList">
+        <ion-card-header>
+          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+          <ion-card-title center><h4 id='{{item.id}}'>{{item.text}}</h4></ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+        
+          <div class="vertical-center">
+            <div class="center animazione"> 
+              <ion-img src="{{item.img1}}" class="ion-align-self-end"></ion-img>
+            </div>  
+            <div class="center animazione"> 
+              <ion-img src="{{item.img2}}" class="ion-align-self-end"></ion-img>
+            </div> 
+            </div>
+        </ion-card-content>
+      </ion-card>
 
-  
-  <ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button>
-  <ion-button (click)="ScrollToTop()"> Scroll To Top </ion-button>
+      <ion-card *ngFor="let item of quattroList">
+        <ion-card-header>
+          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+          <ion-card-title center><h4 id='{{item.id}}'>{{item.subtitle}}</h4></ion-card-title>
+          
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{item.text}}
+        </ion-card-content>
+      </ion-card>
 
- 
+      <ion-card *ngFor="let item of cinqueList">
+        <ion-card-header>
+          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+        </ion-card-header>
+        
+        <ion-card-content>
+          <div class="vertical-center">
+            <div class="center animazione">
+              <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
+            </div>  
+            </div>
+        </ion-card-content>
+        
+      </ion-card>
+
+      <ion-card *ngFor="let item of contattiList">
+        <ion-card-header>
+          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+        
+        </ion-card-header>
+      
+      </ion-card>
+      
+      
+
+      
+      <ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button>
+      <ion-button (click)="ScrollToTop()"> Scroll To Top </ion-button>
+
+</div>   
 </ion-content>
 
 

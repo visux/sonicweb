@@ -90,3 +90,7 @@
 .sonicimage{
     padding: 20px;
   }
+
+  .bg-gradient-class{
+    background-image: linear-gradient(270deg, rgb(0, 0, 0,1) 33%,rgb(250, 249, 252,1) 30%, rgba(29,29,29,1) 10%, rgba(0,0,0,1) 30%) !important;
+  }
