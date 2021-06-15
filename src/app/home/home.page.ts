@@ -89,6 +89,9 @@ export class HomePage {
                   id: 'contacts',
                   title: 'CONTACTS',
                   img : '',
+                  text1 : 'For general infornation, please contact info@sonikchain.com.',
+                  text2 : 'For all marketing, media info,advertising please contact our Sonic(k) Marketing Team at marketing@sonikchain.com.',
+                  text3 : 'For support and tech please contact our Sonic(k) Support Team at support@sonikchain.com.',
                 }];
     
         

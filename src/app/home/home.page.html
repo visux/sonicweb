@@ -186,13 +186,35 @@
           <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
         
         </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <div class="vertical-center">
+          <ion-card>
+            <ion-item >
+              <ion-icon name="at" slot="start"></ion-icon>
+              {{item.text1}}
+            </ion-item>
+          
+            <ion-item >
+              <ion-icon name="at" slot="start"></ion-icon>
+              {{item.text2}}
+            </ion-item>
+          
+            <ion-item >
+              <ion-icon name="at" slot="start"></ion-icon>
+              {{item.text3}}
+            </ion-item>
+          
+        
+          </ion-card>
+        </div>
+        </ion-card-content>
       
       </ion-card>
       
       
 
       
-      <ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button>
+      <!--<ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button> -->
       <ion-button (click)="ScrollToTop()"> Scroll To Top </ion-button>
 
 </div>   
