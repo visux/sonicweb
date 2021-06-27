@@ -122,9 +122,16 @@
 
 ion-card.card {
     box-shadow: none;
-    --background: rgba(6, 1, 27,0.50);
+    background: rgba(6, 1, 27,0.50);
     border-radius: 5px;
     color:#ffffff;
+}
+
+ion-card {
+  box-shadow: none;
+  background: rgba(6, 1, 27,0.50);
+  border-radius: 5px;
+  color:#ffffff;
 }
 
 form.formbackgr {
