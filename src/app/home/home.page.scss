@@ -39,7 +39,8 @@
 
 #containersu {
   text-align: center;
-
+  background-color:rgb(6, 1, 27);
+  opacity: 0.70;
   position: absolute;
   left: 0;
   right: 0;
@@ -55,9 +56,7 @@
 #containersu p {
   font-size: 16px;
   line-height: 22px;
-
-  color: #8c8c8c;
-
+  color: #ffffff;
   margin: 0;
 }
 
@@ -132,5 +131,39 @@ form.formbackgr {
     --background-color: transparent!important;
     background: none;
     
+}
+
+.comingsoon {
+   font-size: 40px;
+   color: #00ff73;
+   letter-spacing: 0.25em;
+}
+.clock {
+   
+  background-image: url("./../../assets/clock.gif") ;
+  //height: 100%;
+ // width: 100%;
+  color: #00ff73;
+  opacity: 0.96;
+  background-repeat: none;
+  position: absolute;
+  width: 527px;
+    height: 527px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+svg {
+  width: var(--svg-calculated-width,100%);
+  height: var(--svg-calculated-height,100%);
+  padding: var(--svg-calculated-padding,0);
+  margin: auto;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
    

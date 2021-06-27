@@ -29,6 +29,58 @@ body {
     color: rgba(var(--ion-text-color-rgb), 0.25);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    user-select: none;
+}
+
+html {
+    font-size: 16px;
+    font-variant: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    //font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
+    font-feature-settings: "smcp";
+    font-feature-settings: "smcp" on;
+    font-feature-settings: "swsh" 2;
+    font-feature-settings: "smcp", "swsh" 2;
+}
+
+
+#background-radial-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    width: 200vw;
+    height: 200vh;
+    mix-blend-mode: color;
+    background: radial-gradient(50% 50% at 50% 50%, #fc077d10 0%, rgba(255, 255, 255, 0) 100%);
+    transform: translate(-50vw, -100vh);
+    z-index: -1;
+}
+
+html {
+    min-height: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #212429;
+    }
+}
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: #F7F8FA;
+    }
+}
+
 :root {
     /* These examples use the same color: sienna. */
     --ion-text-color:             #3ea2fa;
@@ -40,15 +92,40 @@ body {
   }
 
 ion-content{
-    --ion-background-color:#000000;
+    
+    --ion-background-color:rgb(6, 1, 27);
     --color:white;
   
 }
 //3ea2fa
 ion-header {
-    --ion-background-color:#000000;
-    --background: #000000;
+    
+    --ion-background-color:rgb(6, 1, 27);
+    --background: #052a52;
     --color:white;
     --color-selected: #41d4fb;
     --ripple-color: white;
 }
+
+ion-button {
+    color: #fff;
+    background-color: #052a52;
+    
+    border: 1px solid #007bff !important;
+}
+.button-inner{
+    color: #fff;
+    background-color: #052a52;
+    border-color: #007bff;
+}
+ion-label {
+    color:#ffffff !important;
+}
+ion-icon {
+    color:#00ff73 !important;
+}
+
+a{
+    color: #00ff73;
+}
+

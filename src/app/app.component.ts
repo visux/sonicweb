@@ -16,12 +16,12 @@ export class AppComponent {
   Pages = [
     {
       title: 'SONIC(K) 777',
-      url: 'sonic',
+      url: '/sonic',
       icon: 'albums'
     },
     {
       title: 'GET APP',
-      url: 'getapp',
+      url: '/getapp',
       icon: 'play'
     },
     {
