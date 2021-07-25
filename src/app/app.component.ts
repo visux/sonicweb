@@ -79,7 +79,7 @@ export class AppComponent {
     }
 
     openLinkWhitepaperEN(){
-      window.open('https://www.sonikchain.com/assets/pdf/SonicWhitePaperIT.pdf', '_self');
+      window.open('https://www.sonikchain.com/assets/pdf/SonicWhitePaperEN.pdf', '_self');
     }
 
     openLinkDex(){
