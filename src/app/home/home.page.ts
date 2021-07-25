@@ -161,4 +161,10 @@ export class HomePage {
   openLinkFacebook(){
     window.open('https://fb.me/sonikchain', '_self');
   }
+
+  openLinkTwitter(){
+    window.open('https://twitter.com/sonikchain', '_self');
+  }
+
+
 }
