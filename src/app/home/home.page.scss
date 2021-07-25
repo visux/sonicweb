@@ -67,9 +67,11 @@
 .hydrated {
   color: white;
   text-align: center;
+  padding: 0;
 }
 .sonicmini{
   height: 30px;
+  font-size: 16px;
   padding-right: 10px;
   display:inline-block;
 }
@@ -120,22 +122,31 @@
     text-align: center;
 }
 
-ion-card.card {
-    box-shadow: none;
-    background: rgba(6, 1, 27,0.50);
-    border-radius: 5px;
-    color:#ffffff;
-}
+
 
 ion-card {
+
   box-shadow: none;
-  background: rgba(6, 1, 27,0.50);
-  border-radius: 5px;
-  color:#ffffff;
+  margin: 0;
+  color: #ffffff;
+}
+
+ion-title {
+  vertical-align: middle;
+}
+
+.cardestesa {
+  background: #031c37;
+  margin: 0;
+  border-radius: 0;
+  color: #031c37 !important;
+}
+ion-ripple-effect {
+  background: #031c37 !important;
 }
 
 form.formbackgr {
-    --background-color: transparent!important;
+    --background-color: transparent !important;
     background: none;
     
 }
@@ -173,4 +184,102 @@ svg {
   bottom: 0;
   left: 0;
 }
+
+ion-button.ion-color.ion-color-primary.md.button.button-small.button-clear.in-toolbar.ion-activatable.ion-focusable.hydrated {
+  background: #00ff73;
+  font-weight: bold;
+}
+
+ion-col{
+box-shadow: 0 2px 6px 0 #00ff73;
+padding: 30px 20px 20px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+/*.ion-native{
+  background:#031c37 !important;
+}*/
+
+.img-container {
+  /*height: 50px;
+  width: 50%;*/
+}
+
+.img-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} 
+
+.padding-containers-margin {
+  padding: 30px !important;
+  font-size: 20px !important;
+  border: solid 1px;
+  margin: 10px;
+ 
+} 
+
+.padding-containers-minh {
+  margin: 0;
+    border: none;
+  min-height: 320px;
+} 
    
+.bottonecorrezione {
+  margin: 0 !important;
+  padding: 0;
+  border: none;
+}
+
+.padding-containers {
+  padding: 30px !important;
+  font-size: 20px !important;
+   
+} 
+
+.padding-containers-top {
+  padding-top: 30px !important;
+} 
+
+
+.color-tokeneconom {
+  font-size: 18px;
+  color: #3880ff;
+  font-weight: bold;
+}
+.card-background-page{
+  //background-image: url("./../../assets/tokenomicssfondo.png") ;
+  color: #00ff73;
+  background-repeat: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.roadmap-ok{
+  padding: 30px;
+}
+
+.colorato {
+  background: #031c37; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #031c37 0%, #031c37 49%, #031c37 52%, #3880ff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #031c37 0%,#031c37 49%,#031c37 52%,#3880ff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #031c37 0%,#031c37 49%,#031c37 52%,#3880ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#031c37', endColorstr='#3880ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.whitepaper-img{
+  width: 150px;
+    border: solid 3px;
+}
+
+.cardbordo {
+  margin: 10px !important;
+    border: solid 1px;
+}
+
+.whitepaper-noborder{
+  width: 150px;
+    border:none;
+}

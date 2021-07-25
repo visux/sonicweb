@@ -9,17 +9,22 @@
           <ion-list-header>SONIC(K) TOKEN</ion-list-header>
           <ion-note>New Token Generation</ion-note>
        <!--   [class.selected]="activeIndex == i"    (click)="activeIndex = i"-->
-          <ion-menu-toggle auto-hide="false" *ngFor="let pages of Pages; let i = index">
-            <ion-item  routerDirection="root" (click)="scrollToLabel(pages.url)"  lines="none"
+        <!--  <ion-menu-toggle auto-hide="false" *ngFor="let pages of Pages; let i = index">
+            <ion-item  button routerDirection="root" (click)="scrollToTop()"  lines="none"
               detail="false" >
               <ion-icon slot="start" [ios]="pages.icon + '-outline'" [md]="pages.icon + '-sharp'"  ></ion-icon>
               <ion-label>{{ pages.title }}</ion-label>
             </ion-item>
-          </ion-menu-toggle>
+          </ion-menu-toggle> -->
 
          <!-- <ion-item><ion-button color="primary">BUY WITH UNISWAP</ion-button></ion-item>
           <ion-item><ion-button color="primary">BUY WITH BSC</ion-button></ion-item> -->
-          <ion-item><ion-button color="primary">SWAP TOKENS</ion-button></ion-item>
+          <ion-item><ion-button color="primary" (click)="openLinkContract()">CONTRACT</ion-button></ion-item>
+          <ion-item><ion-button color="primary" (click)="openLinkTelegram()">JOIN THE COMMUNITY ON TELEGRAM</ion-button></ion-item>
+          <ion-item><ion-button color="primary" (click)="openLinkWhitepaperIT()">DOWNLOAD WHITEPAPER (IT)</ion-button></ion-item>
+          <ion-item><ion-button color="primary" (click)="openLinkWhitepaperEN()">DOWNLOAD WHITEPAPER (EN SOON)</ion-button></ion-item>
+          <ion-item><ion-button color="primary" (click)="openLink()">JOIN WHITELIST</ion-button></ion-item>
+          <ion-item><ion-button color="primary" >SON SWAP (DEX SOON)</ion-button></ion-item>
           
         </ion-list>
 

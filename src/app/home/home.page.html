@@ -1,9 +1,10 @@
 <ion-header [translucent]="true" >
   <ion-toolbar >
     
-    <ion-title  slot="start" >SONIC(K) TOKEN</ion-title>
+    <ion-title  slot="start" ><img src="./../../assets/icon.png" class="sonicmini"  />SONIC(K) TOKEN</ion-title>
     
     <ion-buttons slot="end">
+      <ion-item><ion-button color="primary" (click)="openLink()">WHITELIST</ion-button></ion-item>
       <img src="./../../assets/minisonic.png" class="sonicmini"  />
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
@@ -11,6 +12,7 @@
 </ion-header>
 
 <ion-content center text-center [fullscreen]="true" [scrollEvents]="true" (ionScrollStart)="logScrollStart($event)" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd($event)" class="background" >
+          
   <div class="bg-gradient-class">
       <div class="vertical-center">
         <div class="center animazione">
@@ -49,49 +51,131 @@
         {{item.title}}
       </ion-button>-->
       
-      <ion-card *ngFor="let item of firstList">
+      
+      <ion-card *ngFor="let item of firstList" class="cardestesa">
         <ion-card-header>
-          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
-        
+          
+          <div class="img-container">
+          <img src="./../../assets/sonicsocial800.png" class="img-img"  />
+          </div>
+       
         </ion-card-header>
         <ion-card-content>
-        <div class="vertical-center">
-          <div class="center animazione">
-            <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
-          </div>  
+          <div class="vertical-center padding-containers-top card-background-page">
+            <h1>Everyone's best friend</h1>
           </div>
-        
-          <ion-card-content class="ion-text-center">
-            <div class="vertical-center">
-            <ion-card>
-              <ion-item href="#" >
+          <div class="vertical-center padding-containers riduci-uncacol">
+            <div>
+                Sonic(k) is a Social that involves many interactions with the outside world.<br>
+                By connecting they interconnect and interact with news, links, entertainment games but above all digital NFTs that can be 
+                exchanged and collected as if they were a simple image.<br>
+                Sonic platform will be constantly updated to implement new features.
+                $SON is the governance token
+<br><br>
               
-                {{item.text}}
-              </ion-item>
-            </ion-card>
+              </div>
+           
+
           </div>
-          </ion-card-content>
-          
-        
-          
-       <!--   <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>
-          
-            <ion-button fill="outline" >{{item.button2}}</ion-button>
-            <ion-button fill="outline" >{{item.button3}}</ion-button>
-            <ion-button fill="outline">{{item.button4}}</ion-button>
-            <ion-button fill="outline" >{{item.button5}}</ion-button>
-            <ion-button fill="outline" >{{item.button6}}</ion-button> -->
-        
+          <div class="vertical-center">
+            <div class="center animazione">
+              <br><br>
+              <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
+            </div>  
+            </div>
+
+<br><br>
         </ion-card-content>
-      
       </ion-card>
 
-      <ion-card *ngFor="let item of secondList">
+      <!-- WHITEPAPER -->
+      <ion-card *ngFor="let item of firstList" class="colorato">
+        <div class="ion-padding">
+          <div class="horizontal-cards">
+            <ion-card color="primary" class="padding-containers-margin">
+              <ion-card-header>
+                <ion-card-title>
+                  <div class="vertical-center card-background-page">
+                  <h1>IT WHITEPAPER</h1>
+                </div>
+              </ion-card-title>
+                <ion-card-subtitle>Italian version 1.0</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                <div class="vertical-center padding-containers-top card-background-page">
+                  <img src="./../../assets/wptemp.JPG" class="whitepaper-img"  />
+                </div>
+                  <div class="vertical-center padding-containers-top">
+                    <ion-button fill="outline" (click)="openLinkWhitepaperIT()">GET V1.0</ion-button>
+                  </div>  
+              </ion-card-content>
+      
+              
+            </ion-card>
+      
+            <ion-card color="primary" class="padding-containers-margin">
+              <ion-card-header>
+                <ion-card-title>
+                  <div class="vertical-center card-background-page">
+                  <h1>EN WHITEPAPER</h1>
+                </div>
+              </ion-card-title>
+                <ion-card-subtitle>English version 1.0</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                <div class="vertical-center padding-containers-top card-background-page">
+                  <img src="./../../assets/wptemp.JPG" class="whitepaper-img"  />
+                </div>
+                  <div class="vertical-center padding-containers-top">
+                    <ion-button fill="outline" (click)="openLinkWhitepaperEN()">GET V1.0</ion-button>
+                  </div>  
+              </ion-card-content>
+            </ion-card>
+      
+          </div>
+        </div>
+
+        
+         </ion-card>
+     
+     <!-- WHITEPAPER-->
+
+
+     <!-- SON SWAP -->
+      <ion-card *ngFor="let item of firstList">
+        <div class="vertical-center padding-containers-top card-background-page">
+          <h1>SON Swap (For Token Sale)</h1>
+        </div>
+        <div class="vertical-center padding-containers">
+            SON Swap is our official decentralized dex that have the ability to swap SON tokens on ETH on Tokens.
+           <br><br>
+            {{item.text}}
+          </div>
+
+          <div class="vertical-center padding-containers-top">
+            <img src="./../../assets/portatile.png"  />
+          </div>  
+          <div class="vertical-center padding-containers-top">
+            <ion-button fill="outline" >LAUNCH SWAP (SOON)</ion-button>
+          </div>  
+
+         <br><br>
+         </ion-card>
+     <!-- END SON SWAP -->
+
+      
+
+
+      <ion-card *ngFor="let item of secondList" class="cardestesa">
         <ion-card-header>
-          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+          <br>
+          <ion-card-title center><h1 id='{{item.id}}' class="card-background-page">{{item.title}}</h1></ion-card-title>
+          SONIC(K) is a collectible NFT card picture games on SONIC SOCIAL with a decentralized ecosystem.
           <div class="ion-padding">
             <div class="horizontal-cards">
-              <ion-card color="primary">
+              <ion-card color="primary" class="padding-containers-margin">
                 <ion-card-header>
                   <ion-card-title>Pacman</ion-card-title>
                   <ion-card-subtitle>Pacman card</ion-card-subtitle>
@@ -103,7 +187,7 @@
                 <img src="assets/pacman.png">
               </ion-card>
         
-              <ion-card color="primary">
+              <ion-card color="primary" class="padding-containers-margin">
                 <ion-card-header>
                   <ion-card-title>Tetris</ion-card-title>
                   <ion-card-subtitle>Tetris card</ion-card-subtitle>
@@ -120,49 +204,103 @@
         <!-- <ion-card-subtitle><ion-button>{{item.button1}}</ion-button></ion-card-subtitle>-->
         </ion-card-header>
       
-        <ion-card-content class="ion-text-center">
-          <div class="vertical-center">
-          <ion-card>
-            <ion-item href="#" class="ion-padding">
-              <ion-icon name="wallet" slot="start"></ion-icon>
-              {{item.text1}}
-            </ion-item>
-          
-            <ion-item href="#">
-              <ion-icon name="people" slot="start"></ion-icon>
-              {{item.text2}}
-            </ion-item>
-          
-            <ion-item href="#">
-              <ion-icon name="wifi" slot="start"></ion-icon>
-              {{item.text3}}
-            </ion-item>
-          
-            <ion-item href="#">
-              <ion-icon name="share" slot="start"></ion-icon>
-              {{item.text4}}
-            </ion-item>
-            <ion-item href="#">
-              <ion-icon name="cash" slot="start"></ion-icon>
+        <ion-card-content >
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="wallet" slot="start"></ion-icon>
+                {{item.text1}}
+          </div>
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="people" slot="start"></ion-icon>
+            {{item.text2}}
+          </div>
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="wifi" slot="start"></ion-icon>
+                {{item.text3}}
+          </div>
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="share" slot="start"></ion-icon>
+            {{item.text4}}
+          </div>
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="cash" slot="start"></ion-icon>
             {{item.text5}}
-            </ion-item>
-            <ion-item href="#">
-              <ion-icon name="cart" slot="start"></ion-icon>
-              {{item.text6}}
-            </ion-item>
-          </ion-card>
-        </div>
+          </div>
+         
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="cart" slot="start"></ion-icon>
+                {{item.text6}}
+          </div>
+            
         </ion-card-content>
         
       </ion-card>
 
-      <ion-card *ngFor="let item of terzaList">
+      <!-- TOKENOMICS -->
+      <ion-card *ngFor="let item of firstList" class="card-background-page">
+        <div class="vertical-center padding-containers-top">
+          <h1>Tokenomics and Stats</h1>
+        </div>
+         <div class="vertical-center padding-containers-top">
+            <img src="./../../assets/tokenomics.png"  />
+          </div>  
+          <div class="vertical-center padding-containers-top color-tokeneconom">
+            $SON
+          </div>  
+          <div class="vertical-center">
+            <p>TOKEN SYMBOL</p>
+          </div>  
+          <div class="vertical-center  color-tokeneconom">
+            1,000,000,000
+          </div>
+          <div class="vertical-center">
+           <p>TOTAL SUPPLY</p>
+          </div>
+          <div class="vertical-center  color-tokeneconom">
+            500,000,000
+          </div>
+          <div class="vertical-center">
+           <p>UNISWAP</p>
+          </div>
+         
+          <div class="vertical-center  color-tokeneconom">
+            50,000,000
+          </div>
+          <div class="vertical-center">
+           <p>WHITELIST</p>
+          </div>
+
+          <div class="vertical-center  color-tokeneconom">
+            50,000,000
+          </div>
+          <div class="vertical-center">
+           <p>FIRST TOKEN SALE</p>
+          </div>
+
+          <div class="vertical-center  color-tokeneconom">
+            80,000,000
+          </div>
+          <div class="vertical-center">
+           <p>STRATEGIC BURN</p>
+          </div>
+
+         <br><br>
+         </ion-card>
+     <!-- END TOKENOMICS -->
+
+
+     <!-- GET APP-->
+      <!--<ion-card *ngFor="let item of terzaList" >
         <ion-card-header>
           <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
           <ion-card-title center><h4 id='{{item.id}}'>{{item.text}}</h4></ion-card-title>
         </ion-card-header>
       
-        <ion-card-content>
+        <ion-card-content id="getapp">
         
           <div class="vertical-center">
             <div class="center animazione"> 
@@ -173,9 +311,11 @@
             </div> 
             </div>
         </ion-card-content>
-      </ion-card>
+      </ion-card>-->
+      <!-- FINE GET APP-->
 
-      <ion-card *ngFor="let item of quattroList">
+      <!-- ABOUT -->
+      <!--<ion-card *ngFor="let item of quattroList" class="cardestesa">
         <ion-card-header>
           <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
           <ion-card-title center><h4 id='{{item.id}}'>{{item.subtitle}}</h4></ion-card-title>
@@ -183,18 +323,23 @@
         </ion-card-header>
       
         <ion-card-content>
-          {{item.text}}
-        </ion-card-content>
-      </ion-card>
+          <div class="vertical-center padding-containers">
+            {{item.text}}
+          </div>
 
-      <ion-card *ngFor="let item of cinqueList">
+      
+        </ion-card-content>
+      </ion-card> -->
+      <!-- END ABOUT-->
+
+      <ion-card *ngFor="let item of cinqueList" >
         <ion-card-header>
-          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+          <ion-card-title center><h1 id='{{item.id}}' class="card-background-page">{{item.title}}</h1></ion-card-title>
         </ion-card-header>
         
         <ion-card-content>
           <div class="vertical-center">
-            <div class="center animazione">
+            <div class="center animazione roadmap-ok">
               <ion-img src="{{item.img}}" class="ion-align-self-end"></ion-img>
             </div>  
             </div>
@@ -202,41 +347,172 @@
         
       </ion-card>
 
-      <ion-card *ngFor="let item of contattiList">
+      <!-- JOIN TELEGRAM -->
+      <ion-card *ngFor="let item of firstList" class="colorato">
+        <div class="vertical-center padding-containers-top card-background-page">
+          <img src="./../../assets/telegram.png"  />
+        </div>
+        <div class="vertical-center padding-containers">
+            <div class="vertical-center card-background-page">
+              <h1>Join Us For A Chat</h1>
+            </div>
+                
+          </div>
+          <div class="vertical-center padding-containers-top">
+            Come and join us on Telegram, for more informations and hear the latest news.
+          </div>  
+          <div class="vertical-center padding-containers-top">
+            <ion-button fill="outline" (click)="openLinkTelegram()">TELEGRAM CHATROOM</ion-button>
+          </div>  
+
+         <br><br>
+         </ion-card>
+     <!-- JOIN TELEGRAM -->
+
+
+           <!-- FULL CONTACTS -->
+           <ion-card *ngFor="let item of firstList" class="">
+            <div class="vertical-center padding-containers-top card-background-page">
+              <h1>COMMUNICATIONS AND PRESS</h1>
+            </div>
+            <div class="ion-padding">
+              <div class="horizontal-cards">
+                <ion-card color="primary" class="padding-containers-margin padding-containers-minh cardbordo">
+                  <ion-card-header>
+                    <ion-card-title>
+                      <div class="vertical-center card-background-page">
+                      <h1>FACEBOOK</h1>
+                    </div>
+                  </ion-card-title>
+                    <ion-card-subtitle> </ion-card-subtitle>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                    <div class="vertical-center padding-containers-top card-background-page">
+                      <button fill="outline" class="bottonecorrezione" (click)="openLinkFacebook()"><img src="./../../assets/facebook100.png" class="whitepaper-noborder"  /></button>
+                    
+                      </div>
+                  </ion-card-content>
+               </ion-card>
+          
+                  <ion-card color="primary" class="padding-containers-margin padding-containers-minh cardbordo">
+                
+                <ion-card-header>
+                    <ion-card-title>
+                      <div class="vertical-center card-background-page">
+                      <h1>TELEGRAM</h1>
+                    </div>
+                  </ion-card-title>
+                    <ion-card-subtitle></ion-card-subtitle>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                    <div class="vertical-center padding-containers-top card-background-page">
+                      <button fill="outline" class="bottonecorrezione" (click)="openLinkTelegram()"> <img src="./../../assets/telegram100.png" class="whitepaper-noborder"  /></button>
+                    </div>
+                  </ion-card-content>
+                  
+                </ion-card>
+
+                <ion-card color="primary" class="padding-containers-margin padding-containers-minh cardbordo">
+                  <ion-card-header>
+                    <ion-card-title>
+                      <div class="vertical-center card-background-page">
+                      <h1>REDDIT</h1>
+                    </div>
+                  </ion-card-title>
+                    <ion-card-subtitle>(SOON)</ion-card-subtitle>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                    <div class="vertical-center padding-containers-top card-background-page">
+                      <button fill="outline" class="bottonecorrezione">  <img src="./../../assets/reddit100.png" class="whitepaper-noborder"  /></button>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+          
+                <ion-card color="primary" class="padding-containers-margin padding-containers-minh cardbordo">
+                  <ion-card-header>
+                    <ion-card-title>
+                      <div class="vertical-center card-background-page">
+                      <h1>YOUTUBE</h1>
+                    </div>
+                  </ion-card-title>
+                    <ion-card-subtitle>(SOON)</ion-card-subtitle>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                    <div class="vertical-center padding-containers-top card-background-page">
+                      <button fill="outline" class="bottonecorrezione">  <img src="./../../assets/youtube100.png" class="whitepaper-noborder"  /> </button>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+
+
+              </div>
+            </div>
+
+            
+            </ion-card>
+        
+          <!-- FULL CONTACTS-->
+
+      <ion-card *ngFor="let item of contattiList" class="cardestesa">
         <ion-card-header>
-          <ion-card-title center><h1 id='{{item.id}}'>{{item.title}}</h1></ion-card-title>
+          <ion-card-title center><h1 id='{{item.id}}' class="card-background-page">{{item.title}}</h1></ion-card-title>
         
         </ion-card-header>
         <ion-card-content class="ion-text-center">
-          <div class="vertical-center">
-          <ion-card>
-            <ion-item >
-              <ion-icon name="at" slot="start"></ion-icon>
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="at" slot="start"></ion-icon>
               {{item.text1}}
-            </ion-item>
-          
-            <ion-item >
-              <ion-icon name="at" slot="start"></ion-icon>
-              {{item.text2}}
-            </ion-item>
-          
-            <ion-item >
-              <ion-icon name="at" slot="start"></ion-icon>
-              {{item.text3}}
-            </ion-item>
-          
-        
-          </ion-card>
-        </div>
+          </div>
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="at" slot="start"></ion-icon>
+            {{item.text2}}
+          </div>
+
+          <div class="vertical-center padding-containers-margin colorato">
+            <ion-icon name="at" slot="start"></ion-icon>
+            {{item.text3}}
+          </div>
+
+         
         </ion-card-content>
       
       </ion-card>
-      
-      
+     
+     
 
-      
+ 
+      <ion-card *ngFor="let item of firstList" class="cardestesa">
+        <ion-card-content>
+          <div class="vertical-center padding-containers-top">
+           
+            <p> Copyright © 2021 Sonic(k) Token. All Rights Reserved.</p>
+             
+             </div>
+            
+             <div class="vertical-center">
+            
+              <p> Sonic(k) is not an investment. Sonic(k) makes no promises and is not responsable for any losses or errors use at your own risk.
+              </p>
+              
+              </div>
+           
+             
+          
+          <div class="vertical-center ">
+            Contact Us: info@sonikchain.com
+          </div>
+         <br><br>
+        </ion-card-content>
+      </ion-card>
       <!--<ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button> -->
       <ion-button (click)="ScrollToTop()"> Scroll To Top </ion-button>
+
 
 </div>   
 </ion-content>

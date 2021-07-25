@@ -13,17 +13,17 @@ export class HomePage {
   secondList: any;
   terzaList: any;
   quattroList: any;
-  contattiList:any;
-  cinqueList:any;
+  contattiList: any;
+  cinqueList: any;
   dummyList: any;
-  
-  
-  constructor(private menu: MenuController) { 
-      
+
+
+  constructor(private menu: MenuController) {
+
         this.firstList = [
       {
         id: 'sonic',
-        title: 'SONIC(K) 777',
+        title: 'SONIC(K)',
         img : './../../assets/diagrasonic.png',
         button1 : 'SHOW ECONOMIC TREND OF SONIC',
         link1 : '',
@@ -37,14 +37,13 @@ export class HomePage {
         link5 : '',
         button6 : 'PANCAKE',
         link6 : '',
-        text: 'SONIC (SON) is a smart contract that implement a new ERC777 standard token for Ethereum network and even later a BEP-20 for BSC network.'
-      
+        text: 'This Smart Contract implement a new ERC777 standard token for Ethereum network and even later a BEP-20 for BSC network.'
+
       }];
 
-      this.secondList = [
-        {
+      this.secondList = [{
           id: 'social',
-          title: ' SOCIAL WITH NFT COLLECTIBLES TOKENS ',
+          title: ' Social with NFT Collectibles Tokens ',
           img1 : '',
           img2 : '',
           button1 : '',
@@ -60,7 +59,7 @@ export class HomePage {
         this.terzaList = [
           {
             id: 'getapp',
-            title: 'GET APP',
+            title: 'Get App',
             img1 : './../../assets/google-play-badge.png',
             img2 : './../../assets/appstore-badge.png',
             link1 : '',
@@ -71,7 +70,7 @@ export class HomePage {
           this.quattroList = [
             {
               id: 'about',
-              title: 'ABOUT',
+              title: 'About',
               subtitle : 'SONIC(K) is a collectible NFT card picture games on SONIC SOCIAL with a decentralized ecosystem.',
               img : '',
               text : '',
@@ -80,14 +79,14 @@ export class HomePage {
             this.cinqueList = [
               {
                 id: 'roadmap',
-                title: 'ROADMAP',
+                title: 'Roadmap',
                 img : './../../assets/roadmap.png',
               }];
 
               this.contattiList = [
                 {
                   id: 'contacts',
-                  title: 'CONTACTS',
+                  title: 'Contacts',
                   img : '',
                   text1 : 'For general infornation, please contact info@sonikchain.com.',
                   text2 : 'For all marketing, media info,advertising please contact our Sonic(k) Marketing Team at marketing@sonikchain.com.',
@@ -122,7 +121,7 @@ export class HomePage {
   }
 
   logScrollEnd(event) {
-    console.log("logScrollEnd : When Scroll Ends", event);
+    console.log('logScrollEnd : When Scroll Ends', event);
   }
 
   ScrollToBottom() {
@@ -138,10 +137,28 @@ export class HomePage {
   }
 
   scrollToLabel(label) {
-    var titleELe = document.getElementById(label);
+    // tslint:disable-next-line:prefer-const
+    const titleELe = document.getElementById(label);
     this.content.scrollToPoint(0, titleELe.offsetTop, 1000);
   }
 
-  
+  openLink(){
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeUwCIqVpt6xY_hEDnKVJ9ki0S7_Xdlu8H9AlGIq42-1ZM0cA/viewform?usp=pp_url', '_self');
+  }
 
+  openLinkTelegram(){
+    window.open('https://t.me/sonikchain', '_self');
+  }
+
+  openLinkWhitepaperIT(){
+    window.open('https://www.sonikchain.com/assets/pdf/SonicWhitePaperIT.pdf', '_self');
+  }
+
+  openLinkWhitepaperEN(){
+    window.open('https://www.sonikchain.com/assets/pdf/SonicWhitePaperIT.pdf', '_self');
+  }
+
+  openLinkFacebook(){
+    window.open('https://fb.me/sonikchain', '_self');
+  }
 }

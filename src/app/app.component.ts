@@ -1,8 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-
-import { IonContent, Platform } from '@ionic/angular';
+import {  Platform } from '@ionic/angular';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import {IonContent} from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -41,13 +41,11 @@ export class AppComponent {
     }
   ];
 
-  
 
-  @ViewChild(IonContent, { static: false }) content: IonContent;
-  
+  @ViewChild(IonContent, {read: IonContent}) content: IonContent;
   constructor( private platform: Platform,
-    private statusBar: StatusBar,
-    private splashScreen: SplashScreen,) {
+               private statusBar: StatusBar,
+               private splashScreen: SplashScreen) {
        this.initializeApp();
     }
 
@@ -59,7 +57,38 @@ export class AppComponent {
     }
 
     scrollToLabel(label) {
-      var titleELe = document.getElementById(label);
+      const titleELe = document.getElementById(label);
       this.content.scrollToPoint(0, titleELe.offsetTop, 1000);
     }
+
+    openLink(){
+      // tslint:disable-next-line:max-line-length
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSeUwCIqVpt6xY_hEDnKVJ9ki0S7_Xdlu8H9AlGIq42-1ZM0cA/viewform?usp=pp_url', '_self');
+    }
+
+    openLinkContract(){
+      window.open('https://etherscan.io/token/0xce659de292ad4fa9aafd82b038936cebd9291e77', '_self');
+    }
+
+    openLinkTelegram(){
+      window.open('https://t.me/sonikchain', '_self');
+    }
+
+    openLinkWhitepaperIT(){
+      window.open('https://www.sonikchain.com/assets/pdf/SonicWhitePaperIT.pdf', '_self');
+    }
+
+    openLinkWhitepaperEN(){
+      window.open('https://www.sonikchain.com/assets/pdf/SonicWhitePaperIT.pdf', '_self');
+    }
+
+    openLinkDex(){
+      window.open('https://swap.sonikchain.com', '_self');
+    }
+
+    scrollToTop() {
+      this.content.scrollToTop();
+    }
 }
+
+
