@@ -1,4 +1,4 @@
-# OLD SONIC TOKEN ($SON) WEB
+# OLD SONIC TOKEN ($SON) WEBSITE
 
 The first website for sonic token web
 
